@@ -1,0 +1,50 @@
+# `ClanMember`
+
+**Catégorie :** Clans
+
+## Schéma
+
+```
+ClanMember{
+  league League{
+    name JsonLocalizedName{
+    }
+    id integer
+    iconUrls {
+    }
+  }
+  leagueTier LeagueTier{
+    name JsonLocalizedName{
+    }
+    id integer
+    iconUrls {
+    }
+  }
+  builderBaseLeague BuilderBaseLeague{
+    name JsonLocalizedName{
+    }
+    id integer
+  }
+  tag string
+  name string
+  role stringEnum:
+    [ NOT_MEMBER, MEMBER, LEADER, ADMIN, COLEADER ]
+  townHallLevel integer
+  expLevel integer
+  clanRank integer
+  previousClanRank integer
+  donations integer
+  donationsReceived integer
+  trophies integer
+  builderBaseTrophies integer
+  playerHouse PlayerHouse{
+    elements PlayerHouseElementList[PlayerHouseElement{
+      id integer
+      type stringEnum:
+        [ GROUND, ROOF, FOOT, DECO ]
+    }]
+  }
+}
+```
+
+[← Index des modèles](../README.md) · [← Documentation API](../../README.md)
