@@ -1,8 +1,8 @@
 # `ClanDistrictDataList[ClanDistrictDataList`
 
-**Catégorie :** Clans
+**Category:** Clans
 
-## Schéma
+## Schema
 
 ```
 ClanDistrictDataList[ClanDistrictDataList{
@@ -13,4 +13,4 @@ ClanDistrictDataList[ClanDistrictDataList{
 }]
 ```
 
-[← Index des modèles](../README.md) · [← Documentation API](../../README.md)
+[← Models index](../README.md) · [← API documentation](../../README.md)

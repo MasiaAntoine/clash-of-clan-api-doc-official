@@ -1,30 +1,30 @@
-# Introduction et authentification
+# Introduction and authentication
 
-## Démarrage rapide
+## Quick start
 
-1. Créez un compte sur le [portail développeur](https://developer.clashofclans.com).
-2. Générez un jeton API (**Mon compte**).
-3. Ajoutez-le à chaque requête :
+1. Create an account on the [developer portal](https://developer.clashofclans.com).
+2. Generate an API token (**My Account**).
+3. Add it to every request:
 
 ```http
 GET /v1/players/%232ABC HTTP/1.1
 Host: api.clashofclans.com
-Authorization: Bearer VOTRE_JETON
+Authorization: Bearer YOUR_TOKEN
 Accept: application/json
 ```
 
-## Encodage des tags
+## Tag encoding
 
-| En jeu | En URL |
-|--------|--------|
+| In-game | In URL |
+|---------|--------|
 | `#2ABC` | `%232ABC` |
 | `#9G9QGJ2C` | `%239G9QGJ2C` |
 
-## Limites et erreurs
+## Rate limits and errors
 
-- **429** : trop de requêtes pour votre jeton.
-- **403** : jeton invalide ou accès refusé à la ressource.
-- Réponses au format `application/json`.
+- **429**: too many requests for your token.
+- **403**: invalid token or access denied to the resource.
+- Responses use `application/json`.
 
 ## Pagination
 
@@ -32,10 +32,10 @@ Accept: application/json
 {
   "items": [],
   "paging": {
-    "after": "marqueur_apres",
-    "before": "marqueur_avant"
+    "after": "marker_after",
+    "before": "marker_before"
   }
 }
 ```
 
-[← Retour à l'index](../README.md)
+[← Back to index](../README.md)

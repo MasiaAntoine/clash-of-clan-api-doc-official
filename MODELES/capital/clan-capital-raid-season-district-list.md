@@ -1,8 +1,8 @@
 # `ClanCapitalRaidSeasonDistrictList[ClanCapitalRaidSeasonDistrictList`
 
-**Catégorie :** Capitale
+**Category:** Capital
 
-## Schéma
+## Schema
 
 ```
 ClanCapitalRaidSeasonDistrictList[ClanCapitalRaidSeasonDistrictList{
@@ -25,4 +25,4 @@ ClanCapitalRaidSeasonDistrictList[ClanCapitalRaidSeasonDistrictList{
 }]
 ```
 
-[← Index des modèles](../README.md) · [← Documentation API](../../README.md)
+[← Models index](../README.md) · [← API documentation](../../README.md)

@@ -1,8 +1,8 @@
 # `ClanList[ClanList`
 
-**Catégorie :** Clans
+**Category:** Clans
 
-## Schéma
+## Schema
 
 ```
 ClanList[ClanList{
@@ -110,4 +110,4 @@ ClanList[ClanList{
 }]
 ```
 
-[← Index des modèles](../README.md) · [← Documentation API](../../README.md)
+[← Models index](../README.md) · [← API documentation](../../README.md)

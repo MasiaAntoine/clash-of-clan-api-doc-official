@@ -1,24 +1,24 @@
-# Obtenir les informations d'un joueur
+# Get player information
 
-| Propriété | Valeur |
+| Property | Value |
 |-----------|--------|
-| **Méthode** | `GET` |
-| **Chemin** | `/players/{playerTag}` |
-| **Catégorie** | Joueurs |
+| **Method** | `GET` |
+| **Path** | `/players/{playerTag}` |
+| **Category** | Joueurs |
 
 ## Description
 
-Obtenir les informations d'un joueur via son tag. Les tags se trouvent en jeu ou dans les listes de membres. Encodez `#` en `%23` dans l'URL.
+Get player information by tag. Tags are found in-game or in clan member lists. URL-encode `#` as `%23`.
 
-## Paramètres
+## Parameters
 
-| Nom | Type | Emplacement | Requis | Description |
+| Name | Type | Location | Required | Description |
 |-----|------|-------------|:------:|-------------|
-| `playerTag` | `string` | path | Oui | Tag du joueur. |
+| `playerTag` | `string` | path | Yes | Tag of the player. |
 
-## Réponses
+## Responses
 
-### 200 — Succès
+### 200 — Success
 
 ```
 Player{
@@ -61,18 +61,18 @@ previousLeagueSeasonId Long{...}
 }
 ```
 
-### Erreurs standard
+### Standard errors
 
 | Code | Description |
 |------|-------------|
-| `400` | Le client a fourni des paramètres incorrects pour la requête. |
-| `403` | Accès refusé : identifiants manquants/incorrects ou jeton API sans droits sur la ressource. |
-| `404` | Ressource introuvable. |
-| `429` | Requête limitée (throttling) : trop de requêtes pour le jeton API utilisé. |
-| `500` | Erreur inconnue lors du traitement de la requête. |
-| `503` | Service temporairement indisponible (maintenance). |
+| `400` | Client provided incorrect parameters for the request. |
+| `403` | Access denied: missing/incorrect credentials or API token lacks access to the resource. |
+| `404` | Resource not found. |
+| `429` | Request throttled: too many requests for the API token used. |
+| `500` | Unknown error while handling the request. |
+| `503` | Service temporarily unavailable (maintenance). |
 
-Format d'erreur :
+Error format:
 
 ```json
 {
@@ -83,4 +83,4 @@ Format d'erreur :
 }
 ```
 
-[← Retour à l'index](../../README.md)
+[← Back to index](../../README.md)

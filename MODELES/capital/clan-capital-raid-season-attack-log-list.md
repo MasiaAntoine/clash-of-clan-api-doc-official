@@ -1,8 +1,8 @@
 # `ClanCapitalRaidSeasonAttackLogList[ClanCapitalRaidSeasonAttackLogList`
 
-**Catégorie :** Capitale
+**Category:** Capital
 
-## Schéma
+## Schema
 
 ```
 ClanCapitalRaidSeasonAttackLogList[ClanCapitalRaidSeasonAttackLogList{
@@ -37,4 +37,4 @@ ClanCapitalRaidSeasonAttackLogList[ClanCapitalRaidSeasonAttackLogList{
 }]
 ```
 
-[← Index des modèles](../README.md) · [← Documentation API](../../README.md)
+[← Models index](../README.md) · [← API documentation](../../README.md)

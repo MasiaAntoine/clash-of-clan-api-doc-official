@@ -1,24 +1,24 @@
-# Récupérer la guerre de clan actuelle
+# Get clan's current war
 
-| Propriété | Valeur |
+| Property | Value |
 |-----------|--------|
-| **Méthode** | `GET` |
-| **Chemin** | `/clans/{clanTag}/currentwar` |
-| **Catégorie** | Clans |
+| **Method** | `GET` |
+| **Path** | `/clans/{clanTag}/currentwar` |
+| **Category** | Clans |
 
 ## Description
 
-Récupérer la guerre de clan actuelle
+Get clan's current war
 
-## Paramètres
+## Parameters
 
-| Nom | Type | Emplacement | Requis | Description |
+| Name | Type | Location | Required | Description |
 |-----|------|-------------|:------:|-------------|
-| `clanTag` | `string` | path | Oui | Tag du clan. |
+| `clanTag` | `string` | path | Yes | Tag of the clan. |
 
-## Réponses
+## Responses
 
-### 200 — Succès
+### 200 — Success
 
 ```
 ClanWar{
@@ -36,18 +36,18 @@ preparationStartTime string
 }
 ```
 
-### Erreurs standard
+### Standard errors
 
 | Code | Description |
 |------|-------------|
-| `400` | Le client a fourni des paramètres incorrects pour la requête. |
-| `403` | Accès refusé : identifiants manquants/incorrects ou jeton API sans droits sur la ressource. |
-| `404` | Ressource introuvable. |
-| `429` | Requête limitée (throttling) : trop de requêtes pour le jeton API utilisé. |
-| `500` | Erreur inconnue lors du traitement de la requête. |
-| `503` | Service temporairement indisponible (maintenance). |
+| `400` | Client provided incorrect parameters for the request. |
+| `403` | Access denied: missing/incorrect credentials or API token lacks access to the resource. |
+| `404` | Resource not found. |
+| `429` | Request throttled: too many requests for the API token used. |
+| `500` | Unknown error while handling the request. |
+| `503` | Service temporarily unavailable (maintenance). |
 
-Format d'erreur :
+Error format:
 
 ```json
 {
@@ -58,4 +58,4 @@ Format d'erreur :
 }
 ```
 
-[← Retour à l'index](../../README.md)
+[← Back to index](../../README.md)

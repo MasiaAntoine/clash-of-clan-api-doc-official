@@ -1,8 +1,8 @@
 # `ClanCapitalRaidSeasonAttackLogEntry`
 
-**Catégorie :** Capitale
+**Category:** Capital
 
-## Schéma
+## Schema
 
 ```
 ClanCapitalRaidSeasonAttackLogEntry{
@@ -37,4 +37,4 @@ ClanCapitalRaidSeasonAttackLogEntry{
 }
 ```
 
-[← Index des modèles](../README.md) · [← Documentation API](../../README.md)
+[← Models index](../README.md) · [← API documentation](../../README.md)

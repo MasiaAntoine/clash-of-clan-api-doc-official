@@ -1,44 +1,44 @@
-# Récupérer les saisons de raid de capitale
+# Get clan capital raid seasons
 
-| Propriété | Valeur |
+| Property | Value |
 |-----------|--------|
-| **Méthode** | `GET` |
-| **Chemin** | `/clans/{clanTag}/capitalraidseasons` |
-| **Catégorie** | Clans |
+| **Method** | `GET` |
+| **Path** | `/clans/{clanTag}/capitalraidseasons` |
+| **Category** | Clans |
 
 ## Description
 
-Récupérer les saisons de raid de capitale du clan.
+Retrieve the clan's capital raid seasons.
 
-## Paramètres
+## Parameters
 
-| Nom | Type | Emplacement | Requis | Description |
+| Name | Type | Location | Required | Description |
 |-----|------|-------------|:------:|-------------|
-| `clanTag` | `string` | path | Oui | Tag du clan. |
-| `limit` | `integer` | query | Non | Limite du nombre d'éléments retournés. |
-| `after` | `string` | query | Non | Éléments après ce marqueur (dans `paging`, champ `after`). `after` et `before` sont mutuellement exclusifs. |
-| `before` | `string` | query | Non | Éléments avant ce marqueur (dans `paging`, champ `before`). `after` et `before` sont mutuellement exclusifs. |
+| `clanTag` | `string` | path | Yes | Tag of the clan. |
+| `limit` | `integer` | query | No | Limit the number of items returned in the response. |
+| `after` | `string` | query | No | Items after this marker (in `paging`, field `after`). `after` and `before` are mutually exclusive. |
+| `before` | `string` | query | No | Items before this marker (in `paging`, field `before`). `after` and `before` are mutually exclusive. |
 
-## Réponses
+## Responses
 
-### 200 — Succès
+### 200 — Success
 
 ```
 ClanCapitalRaidSeasons[ClanCapitalRaidSeason{...}]
 ```
 
-### Erreurs standard
+### Standard errors
 
 | Code | Description |
 |------|-------------|
-| `400` | Le client a fourni des paramètres incorrects pour la requête. |
-| `403` | Accès refusé : identifiants manquants/incorrects ou jeton API sans droits sur la ressource. |
-| `404` | Ressource introuvable. |
-| `429` | Requête limitée (throttling) : trop de requêtes pour le jeton API utilisé. |
-| `500` | Erreur inconnue lors du traitement de la requête. |
-| `503` | Service temporairement indisponible (maintenance). |
+| `400` | Client provided incorrect parameters for the request. |
+| `403` | Access denied: missing/incorrect credentials or API token lacks access to the resource. |
+| `404` | Resource not found. |
+| `429` | Request throttled: too many requests for the API token used. |
+| `500` | Unknown error while handling the request. |
+| `503` | Service temporarily unavailable (maintenance). |
 
-Format d'erreur :
+Error format:
 
 ```json
 {
@@ -49,4 +49,4 @@ Format d'erreur :
 }
 ```
 
-[← Retour à l'index](../../README.md)
+[← Back to index](../../README.md)

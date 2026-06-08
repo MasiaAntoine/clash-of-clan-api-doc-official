@@ -1,23 +1,23 @@
-# Vérifier le jeton API joueur
+# Verify player API token
 
-| Propriété | Valeur |
+| Property | Value |
 |-----------|--------|
-| **Méthode** | `POST` |
-| **Chemin** | `/players/{playerTag}/verifytoken` |
-| **Catégorie** | Joueurs |
+| **Method** | `POST` |
+| **Path** | `/players/{playerTag}/verifytoken` |
+| **Category** | Joueurs |
 
 ## Description
 
-Vérifier le jeton API à usage unique présent dans les paramètres du jeu pour confirmer la propriété du compte.
+Verify the one-time API token from in-game settings to confirm account ownership.
 
-## Paramètres
+## Parameters
 
-| Nom | Type | Emplacement | Requis | Description |
+| Name | Type | Location | Required | Description |
 |-----|------|-------------|:------:|-------------|
-| `playerTag` | `string` | path | Oui | Tag du joueur. |
-| `body` | `object` | body | Oui | Corps de la requête JSON. |
+| `playerTag` | `string` | path | Yes | Tag of the player. |
+| `body` | `object` | body | Yes | JSON request body. |
 
-## Corps de la requête
+## Request body
 
 ```json
 {
@@ -25,9 +25,9 @@ Vérifier le jeton API à usage unique présent dans les paramètres du jeu pour
 }
 ```
 
-## Réponses
+## Responses
 
-### 200 — Succès
+### 200 — Success
 
 ```
 VerifyTokenResponse{
@@ -37,18 +37,18 @@ status string
 }
 ```
 
-### Erreurs standard
+### Standard errors
 
 | Code | Description |
 |------|-------------|
-| `400` | Le client a fourni des paramètres incorrects pour la requête. |
-| `403` | Accès refusé : identifiants manquants/incorrects ou jeton API sans droits sur la ressource. |
-| `404` | Ressource introuvable. |
-| `429` | Requête limitée (throttling) : trop de requêtes pour le jeton API utilisé. |
-| `500` | Erreur inconnue lors du traitement de la requête. |
-| `503` | Service temporairement indisponible (maintenance). |
+| `400` | Client provided incorrect parameters for the request. |
+| `403` | Access denied: missing/incorrect credentials or API token lacks access to the resource. |
+| `404` | Resource not found. |
+| `429` | Request throttled: too many requests for the API token used. |
+| `500` | Unknown error while handling the request. |
+| `503` | Service temporarily unavailable (maintenance). |
 
-Format d'erreur :
+Error format:
 
 ```json
 {
@@ -59,4 +59,4 @@ Format d'erreur :
 }
 ```
 
-[← Retour à l'index](../../README.md)
+[← Back to index](../../README.md)

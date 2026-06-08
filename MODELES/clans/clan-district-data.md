@@ -1,8 +1,8 @@
 # `ClanDistrictData`
 
-**Catégorie :** Clans
+**Category:** Clans
 
-## Schéma
+## Schema
 
 ```
 ClanDistrictData{
@@ -13,4 +13,4 @@ ClanDistrictData{
 }
 ```
 
-[← Index des modèles](../README.md) · [← Documentation API](../../README.md)
+[← Models index](../README.md) · [← API documentation](../../README.md)

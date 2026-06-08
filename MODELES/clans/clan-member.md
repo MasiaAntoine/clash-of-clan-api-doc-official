@@ -1,8 +1,8 @@
 # `ClanMember`
 
-**Catégorie :** Clans
+**Category:** Clans
 
-## Schéma
+## Schema
 
 ```
 ClanMember{
@@ -47,4 +47,4 @@ ClanMember{
 }
 ```
 
-[← Index des modèles](../README.md) · [← Documentation API](../../README.md)
+[← Models index](../README.md) · [← API documentation](../../README.md)
