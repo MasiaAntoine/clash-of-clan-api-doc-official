@@ -108,3 +108,11 @@ Use `after` **or** `before`, never both.
 ## Terms of use
 
 Subject to [Supercell terms](https://developer.clashofclans.com).
+
+---
+
+## Support this project
+
+If this documentation helps you, consider buying me a coffee — it keeps the repo maintained and up to date.
+
+[![Buy me a coffee](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnJrd2ExdWRqN2UyZXJtdHhnamRkNG8xcWVmd3J6dGR3cTJzNG8ybSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/GNBCVMv6XobnMUMYJG/giphy.gif)](https://buymeacoffee.com/thorkild)
